@@ -1,7 +1,10 @@
-const Homepage = () => {
+import Navbar from '../components/navBar';
+
+const Homepage = ({ currUser, handleLogout }) => {
   return (
     <>
-      <h1>HomePage</h1>
+      <Navbar currUser={currUser} handleLogout={handleLogout} />
+      <h1>hello </h1>
     </>
   );
 };
